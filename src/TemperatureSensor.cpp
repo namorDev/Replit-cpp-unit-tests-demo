@@ -27,6 +27,9 @@ void TemperatureSensor::setSeason(SEASON s)
 // - If it is winter, the temperature is also in range between -5 and -10 degree
 bool TemperatureSensor::isInRange(int temperature)
 {
-  // TODO: Implement with TDD
-  return false;
+  if (temperature >= 10 && temperature <= 20 || temperature >=50 && temperature <= 60) {
+    return true;
+  }  else {
+    return false;
+  }
 }
